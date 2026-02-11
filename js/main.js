@@ -138,12 +138,17 @@
                     animateCounter(entry.target);
                 }
 
-                // Trigger language bars
+                // Trigger language bars with delay for transition to fire
                 var langFills = entry.target.querySelectorAll('.language-fill');
-                langFills.forEach(function(fill) {
-                    var w = fill.getAttribute('data-width');
-                    fill.style.width = w + '%';
-                });
+                if (langFills.length > 0) {
+                    setTimeout(function() {
+                        langFills.forEach(function(fill, idx) {
+                            setTimeout(function() {
+                                fill.style.width = fill.getAttribute('data-width') + '%';
+                            }, idx * 150);
+                        });
+                    }, 100);
+                }
             }
         });
     }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });

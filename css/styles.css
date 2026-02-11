@@ -35,25 +35,25 @@
 }
 
 [data-theme="dark"] {
-    --bg-primary: #0B0F1A;
-    --bg-secondary: #131927;
-    --bg-alt: #0F1525;
-    --bg-glass: rgba(19, 25, 39, 0.7);
-    --bg-glass-border: rgba(99, 102, 241, 0.1);
-    --bg-nav: rgba(11, 15, 26, 0.85);
+    --bg-primary: #000000;
+    --bg-secondary: #0A0A0A;
+    --bg-alt: #050505;
+    --bg-glass: rgba(10, 10, 10, 0.8);
+    --bg-glass-border: rgba(255, 255, 255, 0.08);
+    --bg-nav: rgba(0, 0, 0, 0.9);
     --text-primary: #F1F5F9;
-    --text-secondary: #94A3B8;
-    --text-muted: #64748B;
+    --text-secondary: #A1A1AA;
+    --text-muted: #71717A;
     --accent: #818CF8;
     --accent-hover: #A5B4FC;
-    --accent-light: rgba(129, 140, 248, 0.1);
+    --accent-light: rgba(129, 140, 248, 0.12);
     --accent-glow: rgba(129, 140, 248, 0.2);
     --accent-gradient: linear-gradient(135deg, #818CF8, #A78BFA, #C4B5FD);
-    --border: rgba(99, 102, 241, 0.1);
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
-    --shadow-md: 0 4px 20px rgba(0,0,0,0.3);
-    --shadow-lg: 0 12px 40px rgba(0,0,0,0.4);
-    --shadow-glow: 0 0 40px rgba(129, 140, 248, 0.15);
+    --border: rgba(255, 255, 255, 0.1);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.5);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.6);
+    --shadow-glow: 0 0 40px rgba(129, 140, 248, 0.2);
 }
 
 /* ---- 2. RESET & BASE ---- */
@@ -601,13 +601,10 @@ body:hover .cursor-ring {
 }
 
 .about-text {
-    text-align: center;
-    font-size: 1.1rem;
+    text-align: left;
+    font-size: 1.05rem;
     line-height: 1.9;
     margin-bottom: 3.5rem;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .stats-grid {
@@ -963,9 +960,6 @@ body:hover .cursor-ring {
     transition: width 1.2s var(--ease-out-expo);
 }
 
-.language-fill.animated {
-    /* width set by JS from data-width attribute */
-}
 
 /* ---- 10. EDUCATION ---- */
 .education-card {
@@ -1083,6 +1077,7 @@ body:hover .cursor-ring {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
+    text-align: left;
 }
 
 .achievement-card p {
@@ -1090,6 +1085,7 @@ body:hover .cursor-ring {
     color: var(--text-muted);
     line-height: 1.7;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .achievement-tag {
@@ -1107,11 +1103,14 @@ body:hover .cursor-ring {
 
 /* ---- 12. CONTACT ---- */
 .contact-intro {
-    text-align: center;
-    font-size: 1.1rem;
+    text-align: left;
+    font-size: 1.05rem;
     color: var(--text-muted);
     margin-bottom: 2.5rem;
     margin-top: -1.5rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-grid {
@@ -1418,7 +1417,7 @@ a.contact-item:hover .contact-arrow {
 
     .education-card {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-content {
