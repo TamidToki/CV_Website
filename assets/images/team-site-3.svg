@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Team photo placeholder 3">
+  <rect width="1200" height="900" fill="#0f172a"/>
+  <rect x="85" y="85" width="1030" height="730" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+  <g fill="#1e293b">
+    <rect x="150" y="170" width="900" height="380"/>
+    <rect x="150" y="590" width="280" height="150"/>
+    <rect x="460" y="590" width="280" height="150"/>
+    <rect x="770" y="590" width="280" height="150"/>
+  </g>
+  <text x="600" y="400" font-family="IBM Plex Mono, monospace" font-size="40" fill="#e2e8f0" text-anchor="middle">Progress meeting photo</text>
+  <text x="600" y="785" font-family="IBM Plex Mono, monospace" font-size="30" fill="#bae6fd" text-anchor="middle">Replace team-site-3.svg with a real image</text>
+</svg>

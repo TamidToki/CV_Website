@@ -1,516 +1,280 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Toki Mohammad Tahmid - Civil Engineer & Project Coordinator | 6+ years managing complex infrastructure projects">
-    <title>Toki Mohammad Tahmid | Civil Engineer & Project Coordinator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toki Mohammad Tahmid - Civil Engineer and Project Coordinator open to project management, construction supervision, site engineering, and junior data roles.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Toki Mohammad Tahmid | Civil Engineer & Project Coordinator">
+  <meta property="og:description" content="6+ years delivering measurable schedule, quality, and cost outcomes in infrastructure projects.">
+  <meta property="og:url" content="https://tamidtoki.github.io/CV_Website/">
+  <meta property="og:image" content="assets/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Toki Mohammad Tahmid | Civil Engineer & Project Coordinator">
+  <meta name="twitter:description" content="6+ years delivering measurable schedule, quality, and cost outcomes in infrastructure projects.">
+  <meta name="twitter:image" content="assets/favicon.svg">
+  <link rel="canonical" href="https://tamidtoki.github.io/CV_Website/">
+  <title>Toki Mohammad Tahmid | Civil Engineer & Project Coordinator</title>
 
-    <!-- Prevent dark mode flash -->
-    <script>
-        (function() {
-            const saved = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
-        })();
-    </script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Skip to content -->
-    <a href="#about" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#top" class="brand">Toki Mohammad Tahmid</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span>
+      </button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#role-fit">Role Fit</a>
+        <a href="#skills-2026">Skills 2026</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-text">TMT</span>
-                <span class="logo-dot"></span>
+  <main id="main">
+    <section class="hero" id="top" data-reveal>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Open to Project Coordination, Construction Supervision, Site Engineering, Assistant PM, PMO Support, and Junior Data Analyst roles</p>
+          <h1>Project-focused Civil Engineer with delivery, coordination, and data reporting strength</h1>
+          <p class="lead">I help teams execute complex projects with stronger planning, cleaner documentation, and disciplined progress tracking. I am targeting roles across construction, project management, and data-support functions.</p>
+
+          <ul class="highlight-metrics" aria-label="Selected impact metrics">
+            <li><strong>700+</strong> technical documents centralized in one workflow</li>
+            <li><strong>35%</strong> improvement in on-time milestones through team coordination</li>
+            <li><strong>25%</strong> reduction in delays via schedule optimization</li>
+            <li><strong>12%</strong> cost savings from analytical method comparison</li>
+          </ul>
+
+          <ul class="role-chips" aria-label="Target roles">
+            <li>Project Coordinator</li>
+            <li>Assistant Project Manager</li>
+            <li>Construction Site Engineer</li>
+            <li>Construction Supervisor</li>
+            <li>PMO Support Analyst</li>
+            <li>Junior Data Analyst</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/Toki_Mohamamd_Tahmid_CV.pdf" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Download CV
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation menu">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about"><span class="nav-number">01.</span> About</a></li>
-                <li><a href="#experience"><span class="nav-number">02.</span> Experience</a></li>
-                <li><a href="#skills"><span class="nav-number">03.</span> Skills</a></li>
-                <li><a href="#education"><span class="nav-number">04.</span> Education</a></li>
-                <li><a href="#achievements"><span class="nav-number">05.</span> Achievements</a></li>
-                <li><a href="#contact"><span class="nav-number">06.</span> Contact</a></li>
+            <a class="btn btn-secondary" href="mailto:tahmid.ce.08@gmail.com">
+              <i class="fa-solid fa-envelope"></i> Email Me
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-side" data-reveal>
+          <figure class="context-figure">
+            <img src="assets/images/profile-photo.jpg" alt="Portrait of Toki Mohammad Tahmid" loading="lazy" onerror="this.onerror=null;this.src='assets/images/profile-photo.svg';">
+            <figcaption>
+              Open to relocation and project roles across Finland and international teams.
+            </figcaption>
+          </figure>
+          <div class="contact-card" aria-label="Contact information">
+            <h2>Quick Contact</h2>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Turku, Finland</li>
+              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:tahmid.ce.08@gmail.com">tahmid.ce.08@gmail.com</a></li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+358449517644">+358 449 517 644</a></li>
+              <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
             </ul>
-            <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            </button>
+            <p class="note">Actively interviewing for early-career to mid-level execution and coordination roles.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="experience" data-reveal>
+      <div class="container">
+        <div class="section-heading">
+          <p>Experience</p>
+          <h2>Proven project outcomes in quality, schedule, and cost</h2>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header id="hero" class="hero">
-        <canvas id="heroCanvas" class="hero-canvas"></canvas>
-        <div class="hero-grid-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Available for opportunities
+        <article class="entry" data-reveal>
+          <header>
+            <div>
+              <h3>QS Engineer</h3>
+              <p>Fervent Multiboard Industries Ltd. · Dhaka, Bangladesh</p>
             </div>
-            <h1 class="hero-name" data-text="Toki Mohammad Tahmid">
-                <span class="hero-name-line">Toki Mohammad</span>
-                <span class="hero-name-line hero-name-accent">Tahmid</span>
-            </h1>
-            <p class="hero-title">
-                <span class="typed-text"></span><span class="cursor">|</span>
-            </p>
-            <div class="hero-location">
-                <i class="fas fa-location-dot"></i>
-                <span>Turku, Finland</span>
+            <time>Aug 2023 - Apr 2025</time>
+          </header>
+          <ul>
+            <li>Centralized 700+ technical documents, reducing retrieval time by 60% and improving version control.</li>
+            <li>Coordinated 5 teams (15+ members), increasing on-time milestone completion by 35%.</li>
+            <li>Built cost-comparison workflows across 20+ methods, producing 12% savings.</li>
+            <li>Ran KPI reporting and audits, resolving 95% of identified compliance issues.</li>
+          </ul>
+        </article>
+
+        <article class="entry" data-reveal>
+          <header>
+            <div>
+              <h3>Structural Design Engineer</h3>
+              <p>Puradesta Prakawshali · Dhaka, Bangladesh</p>
             </div>
-            <div class="hero-links">
-                <a href="mailto:tahmid.ce.08@gmail.com" class="hero-link magnetic" aria-label="Email" title="Email">
-                    <i class="fas fa-envelope"></i>
-                    <span class="link-label">Email</span>
-                </a>
-                <a href="tel:+358449517644" class="hero-link magnetic" aria-label="Phone" title="Phone">
-                    <i class="fas fa-phone"></i>
-                    <span class="link-label">Call</span>
-                </a>
-                <a href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer" class="hero-link magnetic" aria-label="LinkedIn" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span class="link-label">LinkedIn</span>
-                </a>
+            <time>Apr 2022 - Aug 2023</time>
+          </header>
+          <ul>
+            <li>Delivered bridge analysis and design in Midas Civil under AASHTO LRFD and BNBC 2020.</li>
+            <li>Produced 50+ technical drawings and integrated design coordination with stakeholders.</li>
+            <li>Conducted dynamic-load checks for safer bridge behavior.</li>
+          </ul>
+        </article>
+
+        <article class="entry" data-reveal>
+          <header>
+            <div>
+              <h3>QA/QC Engineer</h3>
+              <p>Italian-Thai Development Public Company Limited · Dhaka, Bangladesh</p>
             </div>
+            <time>Apr 2019 - Apr 2022</time>
+          </header>
+          <ul>
+            <li>Led QC for 200+ pile caps and metro station structures with zero safety incidents.</li>
+            <li>Executed 100+ audits and NCR actions, reducing defect rates by 40%.</li>
+            <li>Managed quality across 8 concurrent workstreams in multidisciplinary teams.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="role-fit" data-reveal>
+      <div class="container">
+        <div class="section-heading">
+          <p>Role Fit</p>
+          <h2>Where I can contribute immediately</h2>
         </div>
-        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-            <div class="mouse">
-                <div class="mouse-wheel"></div>
-            </div>
-            <span>Scroll</span>
-        </a>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-number">01</span>
-                    <h2 class="section-title">About Me</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="about-wrapper">
-                    <p class="about-text animate-on-scroll">
-                        Civil Engineer and Project Coordinator with <strong>6+ years</strong> managing complex infrastructure projects, specializing in data-driven project management, process optimization, and cross-functional team coordination. Proven track record managing <strong>700+ technical documents</strong>, implementing systematic workflows that reduced delays by <strong>25%</strong>, and leading quality assurance across high-stakes construction projects. Currently expanding skills in <strong>data science and AI tools</strong>.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-card glass animate-on-scroll" data-count="6" data-suffix="+">
-                            <div class="stat-ring">
-                                <span class="stat-number">0</span>
-                            </div>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-card glass animate-on-scroll" data-count="5" data-suffix="">
-                            <div class="stat-ring">
-                                <span class="stat-number">0</span>
-                            </div>
-                            <span class="stat-label">Professional Roles</span>
-                        </div>
-                        <div class="stat-card glass animate-on-scroll" data-count="700" data-suffix="+">
-                            <div class="stat-ring">
-                                <span class="stat-number">0</span>
-                            </div>
-                            <span class="stat-label">Documents Managed</span>
-                        </div>
-                        <div class="stat-card glass animate-on-scroll" data-count="25" data-suffix="%">
-                            <div class="stat-ring">
-                                <span class="stat-number">0</span>
-                            </div>
-                            <span class="stat-label">Delay Reduction</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section section-alt">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-number">02</span>
-                    <h2 class="section-title">Experience</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="timeline">
-                    <!-- Job 1 -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-pulse"></div>
-                        </div>
-                        <div class="timeline-card glass">
-                            <div class="timeline-card-accent"></div>
-                            <div class="timeline-header">
-                                <div>
-                                    <h3>QS Engineer</h3>
-                                    <p class="timeline-company"><i class="fas fa-building"></i> Fervent Multiboard Industries Ltd.</p>
-                                    <p class="timeline-location"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
-                                <span class="timeline-date">Aug 2023 &ndash; Apr 2025</span>
-                            </div>
-                            <ul class="timeline-details">
-                                <li>Centralized documentation system for 700+ technical documents, creating searchable database that reduced document retrieval time by 60%</li>
-                                <li>Coordinated civil construction workflow across 5 teams (15+ members), improving on-time milestone completion by 35%</li>
-                                <li>Developed automated cost comparison framework analyzing 20+ construction techniques, resulting in 12% cost savings</li>
-                                <li>Generated daily and weekly progress reports with KPI dashboards, identifying 50+ compliance issues with 95% resolution rate</li>
-                                <li>Collaborated with Construction Manager on project scheduling using critical path analysis, reducing project delays by 25%</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Job 2 -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-card glass">
-                            <div class="timeline-card-accent"></div>
-                            <div class="timeline-header">
-                                <div>
-                                    <h3>Structural Design Engineer</h3>
-                                    <p class="timeline-company"><i class="fas fa-building"></i> Puradesta Prakawshali</p>
-                                    <p class="timeline-location"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
-                                <span class="timeline-date">Apr 2022 &ndash; Aug 2023</span>
-                            </div>
-                            <ul class="timeline-details">
-                                <li>Performed structural analysis and design for bridge projects using Midas Civil software, ensuring AASHTO LRFD and BNBC 2020 compliance</li>
-                                <li>Created 50+ technical AutoCAD drawings and comprehensive design specifications</li>
-                                <li>Conducted complex dynamic load analysis including flutter and vortex shedding calculations for cable-stayed bridges</li>
-                                <li>Developed detailed design reports for prestressed concrete box girders, I-girders, and RCC structures</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Job 3 -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-card glass">
-                            <div class="timeline-card-accent"></div>
-                            <div class="timeline-header">
-                                <div>
-                                    <h3>Geotechnical Engineer</h3>
-                                    <p class="timeline-company"><i class="fas fa-building"></i> Delight Engineers &amp; Consultants Ltd.</p>
-                                    <p class="timeline-location"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
-                                <span class="timeline-date">Apr 2022 &ndash; Mar 2023</span>
-                            </div>
-                            <ul class="timeline-details">
-                                <li>Conducted geotechnical investigations including 30+ Standard Penetration Tests (SPT), analyzing soil data with 100% accuracy</li>
-                                <li>Applied AASHTO LRFD BDS standards to calculate bored pile capacity and prepared detailed subsoil investigation reports</li>
-                                <li>Supervised drilling operations coordinating with project managers and contractors for timely delivery of geotechnical data</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Job 4 -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-card glass">
-                            <div class="timeline-card-accent"></div>
-                            <div class="timeline-header">
-                                <div>
-                                    <h3>QA/QC Engineer</h3>
-                                    <p class="timeline-company"><i class="fas fa-building"></i> Italian-Thai Development Public Co. Ltd.</p>
-                                    <p class="timeline-location"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
-                                <span class="timeline-date">Apr 2019 &ndash; Apr 2022</span>
-                            </div>
-                            <ul class="timeline-details">
-                                <li>Led quality control for 200+ pile caps and 180m concourse slab with 88 columns for metro station infrastructure, ensuring zero safety incidents</li>
-                                <li>Implemented systematic quality documentation process, organizing inspection records for compliance with ISO and AASHTO standards</li>
-                                <li>Conducted 100+ construction audits, issuing NCRs and reducing defect rates by 40% through root cause analysis</li>
-                                <li>Coordinated multi-disciplinary teams across 8 concurrent work streams with minimal conflicts</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Job 5 -->
-                    <div class="timeline-item animate-on-scroll">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-card glass">
-                            <div class="timeline-card-accent"></div>
-                            <div class="timeline-header">
-                                <div>
-                                    <h3>Jr. Structural Design Engineer</h3>
-                                    <p class="timeline-company"><i class="fas fa-building"></i> Puradesta Prakawshali</p>
-                                    <p class="timeline-location"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
-                                <span class="timeline-date">Aug 2016 &ndash; Mar 2019</span>
-                            </div>
-                            <ul class="timeline-details">
-                                <li>Assisted in preparing detailed bridge component drawings and specifications using AutoCAD</li>
-                                <li>Conducted structural analysis using Midas Civil and hand calculations to assess load-bearing capacity</li>
-                                <li>Participated in site visits and inspections to monitor construction progress</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-number">03</span>
-                    <h2 class="section-title">Skills</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-category glass animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-chart-line"></i></div>
-                        <h3>Data Analysis</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Excel (Advanced)</span>
-                            <span class="skill-tag">Pivot Tables</span>
-                            <span class="skill-tag">VLOOKUP</span>
-                            <span class="skill-tag">Data Visualization</span>
-                            <span class="skill-tag">Data Management</span>
-                            <span class="skill-tag">Cost Analysis</span>
-                            <span class="skill-tag">Quantitative Analysis</span>
-                        </div>
-                    </div>
-                    <div class="skill-category glass animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Engineering Software</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Midas Civil</span>
-                            <span class="skill-tag">AutoCAD</span>
-                            <span class="skill-tag">Project Management Tools</span>
-                            <span class="skill-tag">Documentation Management</span>
-                        </div>
-                    </div>
-                    <div class="skill-category glass animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-cogs"></i></div>
-                        <h3>Technical Expertise</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">QA/QC Processes</span>
-                            <span class="skill-tag">Engineering Design</span>
-                            <span class="skill-tag">Risk Assessment</span>
-                            <span class="skill-tag">Compliance Auditing</span>
-                            <span class="skill-tag">Technical Documentation</span>
-                            <span class="skill-tag">Process Optimization</span>
-                        </div>
-                    </div>
-                    <div class="skill-category glass animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-tasks"></i></div>
-                        <h3>Project Management</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Cross-functional Coordination</span>
-                            <span class="skill-tag">Stakeholder Management</span>
-                            <span class="skill-tag">Resource Allocation</span>
-                            <span class="skill-tag">Critical Path Analysis</span>
-                            <span class="skill-tag">Workflow Optimization</span>
-                        </div>
-                    </div>
-                    <div class="skill-category glass animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-clipboard-check"></i></div>
-                        <h3>Standards &amp; Compliance</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">AASHTO LRFD BDS</span>
-                            <span class="skill-tag">BNBC 2020</span>
-                            <span class="skill-tag">ISO Standards</span>
-                            <span class="skill-tag">Quality Management Systems</span>
-                        </div>
-                    </div>
-                    <div class="skill-category glass learning animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-rocket"></i></div>
-                        <h3>Currently Learning</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Data Science</span>
-                            <span class="skill-tag">AI Tools</span>
-                        </div>
-                        <div class="learning-progress">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
-                    <div class="skill-category glass full-width animate-on-scroll">
-                        <div class="skill-icon-wrap"><i class="fas fa-language"></i></div>
-                        <h3>Languages</h3>
-                        <div class="language-bars">
-                            <div class="language-item">
-                                <div class="language-info">
-                                    <span>English</span>
-                                    <span class="language-level">Professional</span>
-                                </div>
-                                <div class="language-bar"><div class="language-fill" data-width="90"></div></div>
-                            </div>
-                            <div class="language-item">
-                                <div class="language-info">
-                                    <span>Finnish</span>
-                                    <span class="language-level">Elementary</span>
-                                </div>
-                                <div class="language-bar"><div class="language-fill" data-width="30"></div></div>
-                            </div>
-                            <div class="language-item">
-                                <div class="language-info">
-                                    <span>Bangla</span>
-                                    <span class="language-level">Native</span>
-                                </div>
-                                <div class="language-bar"><div class="language-fill" data-width="100"></div></div>
-                            </div>
-                            <div class="language-item">
-                                <div class="language-info">
-                                    <span>Hindi / Urdu</span>
-                                    <span class="language-level">Limited</span>
-                                </div>
-                                <div class="language-bar"><div class="language-fill" data-width="25"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section section-alt">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-number">04</span>
-                    <h2 class="section-title">Education</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="education-card glass animate-on-scroll">
-                    <div class="education-icon-wrap">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div class="education-icon-ring"></div>
-                    </div>
-                    <div class="education-info">
-                        <span class="education-date">2012 &ndash; 2017</span>
-                        <h3>Bachelor's Degree in Civil Engineering</h3>
-                        <p class="education-school">Ahsanullah University of Science and Technology</p>
-                        <p class="education-location"><i class="fas fa-location-dot"></i> Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="section">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-number">05</span>
-                    <h2 class="section-title">Achievements</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="achievements-grid">
-                    <div class="achievement-card glass animate-on-scroll">
-                        <div class="achievement-icon-wrap">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Kongsberg Maritime Challenge</h3>
-                        <p>Since AI Hackathon 2025 &mdash; Participant demonstrating problem-solving and rapid prototyping skills in a competitive technology environment.</p>
-                        <div class="achievement-tag">Hackathon</div>
-                    </div>
-                    <div class="achievement-card glass animate-on-scroll">
-                        <div class="achievement-icon-wrap">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Tech Community Engagement</h3>
-                        <p>Active participant in Southwest Finland tech ecosystem, regularly attending AI workshops and tech meetups to expand knowledge in data science and AI applications.</p>
-                        <div class="achievement-tag">Community</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section section-alt">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-number">06</span>
-                    <h2 class="section-title">Get in Touch</h2>
-                    <div class="section-line"></div>
-                </div>
-                <p class="contact-intro animate-on-scroll">Interested in collaborating or have a project in mind? Let's connect.</p>
-                <div class="contact-grid animate-on-scroll">
-                    <a href="mailto:tahmid.ce.08@gmail.com" class="contact-item glass magnetic">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">tahmid.ce.08@gmail.com</span>
-                        </div>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
-                    </a>
-                    <a href="tel:+358449517644" class="contact-item glass magnetic">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">Phone</span>
-                            <span class="contact-value">+358 449 517 644</span>
-                        </div>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer" class="contact-item glass magnetic">
-                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">LinkedIn</span>
-                            <span class="contact-value">Toki Mohammad Tahmid</span>
-                        </div>
-                        <i class="fas fa-arrow-right contact-arrow"></i>
-                    </a>
-                    <div class="contact-item glass">
-                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
-                        <div class="contact-details">
-                            <span class="contact-label">Location</span>
-                            <span class="contact-value">Turku, Finland</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn-download magnetic" onclick="window.print()">
-                    <span class="btn-text"><i class="fas fa-download"></i> Download CV</span>
-                    <span class="btn-shine"></span>
-                </button>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>Designed &amp; Built by Toki Mohammad Tahmid</p>
-            <p class="footer-year">&copy; 2026</p>
+        <div class="role-grid">
+          <article class="role-card" data-reveal>
+            <h3>Project Coordinator / Assistant Project Manager</h3>
+            <p>Schedule follow-up, task tracking, risk logs, reporting, and stakeholder coordination.</p>
+          </article>
+          <article class="role-card" data-reveal>
+            <h3>Construction Site Engineer / Site Supervisor</h3>
+            <p>Site execution support, quality supervision, progress control, and contractor coordination.</p>
+          </article>
+          <article class="role-card" data-reveal>
+            <h3>PMO Support Analyst</h3>
+            <p>PMO means Project Management Office. This role supports project governance through dashboards, status packs, RAID logs, and process consistency.</p>
+          </article>
+          <article class="role-card" data-reveal>
+            <h3>Junior Data Analyst (Project/Operations)</h3>
+            <p>Excel-based analysis, KPI tracking, data cleaning, and converting raw project data into decisions.</p>
+          </article>
         </div>
-    </footer>
 
-    <!-- Back to Top -->
-    <button class="back-to-top magnetic" aria-label="Back to top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <figure class="site-photo" data-reveal>
+          <img src="assets/images/site-team-photo.jpg" alt="Construction team on project site" loading="lazy" onerror="this.onerror=null;this.src='assets/images/context-photo.jpg';">
+          <figcaption>Project site collaboration and multidisciplinary team execution.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-    <script src="js/main.js"></script>
+    <section class="section" id="skills-2026" data-reveal>
+      <div class="container">
+        <div class="section-heading">
+          <p>Top Hiring Skills 2025-2026</p>
+          <h2>Skills employers are prioritizing across engineering, PM, and IT</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article data-reveal>
+            <h3>Analytical Thinking</h3>
+            <p>Root-cause analysis, structured decisions, and data-backed recommendations for delivery issues.</p>
+          </article>
+          <article data-reveal>
+            <h3>Adaptability & Resilience</h3>
+            <p>Reliable execution under shifting priorities, constraints, and cross-team dependencies.</p>
+          </article>
+          <article data-reveal>
+            <h3>Communication & Stakeholder Alignment</h3>
+            <p>Clear status communication across technical and non-technical teams.</p>
+          </article>
+          <article data-reveal>
+            <h3>Emotional Intelligence</h3>
+            <p>Empathy, self-management, and professional collaboration in high-pressure project environments.</p>
+          </article>
+          <article data-reveal>
+            <h3>Leadership & Social Influence</h3>
+            <p>Driving ownership, accountability, and momentum without formal authority.</p>
+          </article>
+          <article data-reveal>
+            <h3>AI, Data, and Technology Literacy</h3>
+            <p>Using digital tools, dashboards, and beginner-level analytics to improve project outcomes.</p>
+          </article>
+        </div>
+
+        <div class="tools-strip" data-reveal aria-label="Tools and platforms">
+          <span>Excel</span>
+          <span>AutoCAD</span>
+          <span>Midas Civil</span>
+          <span>BOQ/BBS</span>
+          <span>KPI Dashboards</span>
+          <span>Quality Audits</span>
+          <span>Python (Beginner)</span>
+          <span>AI Tools</span>
+          <span>Project Reporting</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="contact" data-reveal>
+      <div class="container cta">
+        <h2>Available for interviews and immediate contribution</h2>
+        <p>If your team needs someone dependable in execution, coordination, supervision, and structured reporting, I am ready to contribute from day one.</p>
+        <div class="contact-strip" data-reveal>
+          <a href="mailto:tahmid.ce.08@gmail.com"><i class="fa-solid fa-envelope"></i> tahmid.ce.08@gmail.com</a>
+          <a href="tel:+358449517644"><i class="fa-solid fa-phone"></i> +358 449 517 644</a>
+          <a href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:tahmid.ce.08@gmail.com"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+          <a class="btn btn-secondary" href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Toki Mohammad Tahmid</p>
+      <p>&copy; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Toki Mohammad Tahmid",
+    "jobTitle": "Civil Engineer & Project Coordinator",
+    "email": "mailto:tahmid.ce.08@gmail.com",
+    "telephone": "+358449517644",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Turku",
+      "addressCountry": "Finland"
+    },
+    "sameAs": ["https://linkedin.com/in/toki-mohammad-t-a7b334159"]
+  }
+  </script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
