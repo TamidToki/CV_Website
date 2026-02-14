@@ -1,17 +1,18 @@
 :root {
-  --bg: #f7f9fc;
+  --bg: #f5f7fb;
   --surface: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --line: #d1d9e6;
-  --brand: #0f172a;
-  --accent: #334155;
-  --accent-soft: #eff6ff;
+  --text: #0b1220;
+  --muted: #586274;
+  --line: #d9dee8;
+  --brand: #0b1220;
+  --accent: #0f172a;
+  --accent-soft: #f1f4fa;
   --chip: #f8fafc;
-  --chip-line: #d1d9e6;
-  --chip-text: #334155;
+  --chip-line: #d9dee8;
+  --chip-text: #3d4a5e;
   --mono: 'IBM Plex Mono', monospace;
   --body: 'Inter Tight', sans-serif;
+  --serif: 'Playfair Display', serif;
 }
 
 * {
@@ -29,7 +30,7 @@ body {
   font-family: var(--body);
   font-size: 15.5px;
   color: var(--text);
-  background: linear-gradient(180deg, #f8fbff 0%, #f2f6fc 100%);
+  background: var(--bg);
   line-height: 1.56;
 }
 
@@ -78,7 +79,7 @@ button:focus-visible {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--line);
-  background: rgba(248, 251, 255, 0.95);
+  background: rgba(245, 247, 251, 0.95);
   backdrop-filter: blur(8px);
 }
 
@@ -104,7 +105,9 @@ button:focus-visible {
 }
 
 .site-nav a {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--muted);
   border-bottom: 1px solid transparent;
   padding-bottom: 3px;
@@ -135,7 +138,7 @@ button:focus-visible {
 }
 
 .hero {
-  padding: 54px 0 34px;
+  padding: 58px 0 34px;
 }
 
 .hero-grid {
@@ -148,26 +151,35 @@ button:focus-visible {
 .eyebrow {
   display: inline-block;
   font-family: var(--mono);
-  font-size: 0.75rem;
-  color: var(--brand);
+  font-size: 0.67rem;
+  color: var(--muted);
   background: var(--accent-soft);
-  border: 1px solid #d6e2f5;
-  padding: 6px 8px;
+  border: 1px solid var(--line);
+  padding: 5px 7px;
   margin-bottom: 16px;
+  letter-spacing: 0.03em;
 }
 
 h1 {
-  font-size: clamp(1.9rem, 4.4vw, 3.2rem);
-  line-height: 1.06;
+  font-size: clamp(2rem, 4.6vw, 3.5rem);
+  line-height: 1.04;
   letter-spacing: -0.02em;
   margin-bottom: 14px;
-  max-width: 19ch;
+  max-width: 17ch;
+}
+
+.accent-serif {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .lead {
   color: var(--muted);
   margin-bottom: 14px;
-  max-width: 68ch;
+  max-width: 61ch;
+  font-size: 1.02rem;
 }
 
 .highlight-metrics {
@@ -178,7 +190,6 @@ h1 {
 
 .highlight-metrics li {
   border: 1px solid var(--line);
-  border-left: 4px solid var(--accent);
   background: var(--surface);
   padding: 8px 10px;
   color: var(--muted);
@@ -199,7 +210,9 @@ h1 {
   border: 1px solid var(--chip-line);
   background: var(--chip);
   color: var(--chip-text);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   padding: 5px 8px;
 }
 
@@ -215,7 +228,9 @@ h1 {
   gap: 8px;
   border: 1px solid transparent;
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   padding: 9px 13px;
 }
 
@@ -303,7 +318,7 @@ h1 {
 
 .section {
   border-top: 1px solid var(--line);
-  padding: 44px 0;
+  padding: 52px 0;
 }
 
 .section-heading {
@@ -312,7 +327,7 @@ h1 {
 
 .section-heading p {
   font-family: var(--mono);
-  font-size: 0.76rem;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
@@ -320,8 +335,8 @@ h1 {
 }
 
 .section-heading h2 {
-  font-size: clamp(1.32rem, 3vw, 2rem);
-  line-height: 1.2;
+  font-size: clamp(1.45rem, 3.2vw, 2.25rem);
+  line-height: 1.14;
   max-width: 34ch;
 }
 
@@ -380,11 +395,11 @@ h1 {
 }
 
 .role-card {
-  border-top: 4px solid #3b82f6;
+  border-top: 1px solid var(--line);
 }
 
 .skills-grid article {
-  border-top: 4px solid #64748b;
+  border-top: 1px solid var(--line);
 }
 
 .tools-strip {
@@ -398,7 +413,9 @@ h1 {
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
-  font-size: 0.79rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
   padding: 6px 9px;
 }
 
@@ -458,7 +475,9 @@ h1 {
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   padding: 8px 10px;
   display: inline-flex;
   align-items: center;
@@ -523,11 +542,11 @@ h1 {
   }
 
   .hero {
-    padding: 34px 0 24px;
+    padding: 28px 0 20px;
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.58rem;
     margin-bottom: 10px;
     max-width: 100%;
   }
@@ -538,7 +557,7 @@ h1 {
   }
 
   .section {
-    padding: 30px 0;
+    padding: 24px 0;
   }
 
   .section-heading {
@@ -546,7 +565,7 @@ h1 {
   }
 
   .section-heading h2 {
-    font-size: 1.18rem;
+    font-size: 1.08rem;
   }
 
   .highlight-metrics {
@@ -562,7 +581,7 @@ h1 {
   }
 
   .role-chips li {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     padding: 4px 7px;
   }
 
@@ -571,7 +590,7 @@ h1 {
   }
 
   .btn {
-    font-size: 0.83rem;
+    font-size: 0.76rem;
     padding: 8px 10px;
   }
 
@@ -593,13 +612,13 @@ h1 {
   .entry h3,
   .role-card h3,
   .skills-grid h3 {
-    font-size: 0.92rem;
+    font-size: 0.86rem;
   }
 
   .entry li,
   .role-card p,
   .skills-grid p {
-    font-size: 0.84rem;
+    font-size: 0.8rem;
   }
 
   .tools-strip {
@@ -607,7 +626,7 @@ h1 {
   }
 
   .tools-strip span {
-    font-size: 0.72rem;
+    font-size: 0.66rem;
     padding: 4px 6px;
   }
 
@@ -626,7 +645,7 @@ h1 {
   }
 
   .contact-strip a {
-    font-size: 0.78rem;
+    font-size: 0.7rem;
     padding: 6px 8px;
   }
 
