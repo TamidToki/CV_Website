@@ -1,280 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Toki Mohammad Tahmid - Civil Engineer and Project Coordinator open to project management, construction supervision, site engineering, and junior data roles.">
+  <meta name="description" content="Toki Mohammad Tahmid - Civil Engineer and Project Coordinator based in Turku, Finland.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#0f172a">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Toki Mohammad Tahmid | Civil Engineer & Project Coordinator">
-  <meta property="og:description" content="6+ years delivering measurable schedule, quality, and cost outcomes in infrastructure projects.">
-  <meta property="og:url" content="https://tamidtoki.github.io/CV_Website/">
-  <meta property="og:image" content="assets/favicon.svg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Toki Mohammad Tahmid | Civil Engineer & Project Coordinator">
-  <meta name="twitter:description" content="6+ years delivering measurable schedule, quality, and cost outcomes in infrastructure projects.">
-  <meta name="twitter:image" content="assets/favicon.svg">
-  <link rel="canonical" href="https://tamidtoki.github.io/CV_Website/">
   <title>Toki Mohammad Tahmid | Civil Engineer & Project Coordinator</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
-  <header class="site-header">
-    <div class="container nav-row">
-      <a href="#top" class="brand">Toki Mohammad Tahmid</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
-        <span></span><span></span>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Toki Mohammad Tahmid</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
       </button>
-      <nav id="siteNav" class="site-nav" aria-label="Primary">
-        <a href="#experience">Experience</a>
-        <a href="#role-fit">Role Fit</a>
-        <a href="#skills-2026">Skills 2026</a>
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="#work">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" data-reveal>
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Open to Project Coordination, Construction Supervision, Site Engineering, Assistant PM, PMO Support, and Junior Data Analyst roles</p>
-          <h1>Project-focused Civil Engineer turning complex execution into <span class="accent-serif">predictable delivery</span></h1>
-          <p class="lead">I help teams execute complex projects with stronger planning, cleaner documentation, and disciplined progress tracking. I am targeting roles across construction, project management, and data-support functions with a <span class="accent-serif">high-accountability mindset</span>.</p>
-
-          <ul class="highlight-metrics" aria-label="Selected impact metrics">
-            <li><strong>700+</strong> technical documents centralized in one workflow</li>
-            <li><strong>35%</strong> improvement in on-time milestones through team coordination</li>
-            <li><strong>25%</strong> reduction in delays via schedule optimization</li>
-            <li><strong>12%</strong> cost savings from analytical method comparison</li>
-          </ul>
-
-          <ul class="role-chips" aria-label="Target roles">
-            <li>Project Coordinator</li>
-            <li>Assistant Project Manager</li>
-            <li>Construction Site Engineer</li>
-            <li>Construction Supervisor</li>
-            <li>PMO Support Analyst</li>
-            <li>Junior Data Analyst</li>
-          </ul>
-
+    <section id="top" class="hero section">
+      <div class="container hero-grid reveal">
+        <div class="hero-content">
+          <p class="eyebrow">Open to Project Coordinator, Assistant PM, Construction Site Engineer, PMO Support, and Junior Data Analyst roles</p>
+          <h1>
+            Civil Engineer focused on
+            <span class="serif">predictable delivery</span>
+          </h1>
+          <p class="hero-lead">
+            I turn complex infrastructure execution into measurable progress through documentation discipline,
+            schedule control, quality systems, and practical reporting.
+          </p>
+          <div id="role-targets" class="chip-row" aria-label="Role targets"></div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="assets/Toki_Mohamamd_Tahmid_CV.pdf" download>
-              <i class="fa-solid fa-file-arrow-down"></i> Download CV
-            </a>
-            <a class="btn btn-secondary" href="mailto:tahmid.ce.08@gmail.com">
-              <i class="fa-solid fa-envelope"></i> Email Me
-            </a>
+            <a class="btn btn-primary" href="mailto:tahmid.ce.08@gmail.com">Contact Me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/toki-mohammad-t-a7b334159/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
 
-        <aside class="hero-side" data-reveal>
-          <figure class="context-figure">
-            <img src="assets/images/profile-photo.jpg" alt="Portrait of Toki Mohammad Tahmid" loading="lazy" onerror="this.onerror=null;this.src='assets/images/profile-photo.svg';">
-            <figcaption>
-              Open to relocation and project roles across Finland and international teams.
-            </figcaption>
+        <aside class="hero-media reveal">
+          <figure>
+            <img id="profile-pic" src="" alt="Toki Mohammad Tahmid">
+            <figcaption>Based in Turku, Finland. Available for relocation and international teams.</figcaption>
           </figure>
-          <div class="contact-card" aria-label="Contact information">
-            <h2>Quick Contact</h2>
-            <ul>
-              <li><i class="fa-solid fa-location-dot"></i> Turku, Finland</li>
-              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:tahmid.ce.08@gmail.com">tahmid.ce.08@gmail.com</a></li>
-              <li><i class="fa-solid fa-phone"></i> <a href="tel:+358449517644">+358 449 517 644</a></li>
-              <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
-            </ul>
-            <p class="note">Actively interviewing for early-career to mid-level execution and coordination roles.</p>
-          </div>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="experience" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <p>Experience</p>
-          <h2>Proven project outcomes in quality, schedule, and cost</h2>
-        </div>
-
-        <article class="entry" data-reveal>
-          <header>
-            <div>
-              <h3>QS Engineer</h3>
-              <p>Fervent Multiboard Industries Ltd. · Dhaka, Bangladesh</p>
-            </div>
-            <time>Aug 2023 - Apr 2025</time>
-          </header>
-          <ul>
-            <li>Centralized 700+ technical documents, reducing retrieval time by 60% and improving version control.</li>
-            <li>Coordinated 5 teams (15+ members), increasing on-time milestone completion by 35%.</li>
-            <li>Built cost-comparison workflows across 20+ methods, producing 12% savings.</li>
-            <li>Ran KPI reporting and audits, resolving 95% of identified compliance issues.</li>
-          </ul>
-        </article>
-
-        <article class="entry" data-reveal>
-          <header>
-            <div>
-              <h3>Structural Design Engineer</h3>
-              <p>Puradesta Prakawshali · Dhaka, Bangladesh</p>
-            </div>
-            <time>Apr 2022 - Aug 2023</time>
-          </header>
-          <ul>
-            <li>Delivered bridge analysis and design in Midas Civil under AASHTO LRFD and BNBC 2020.</li>
-            <li>Produced 50+ technical drawings and integrated design coordination with stakeholders.</li>
-            <li>Conducted dynamic-load checks for safer bridge behavior.</li>
-          </ul>
-        </article>
-
-        <article class="entry" data-reveal>
-          <header>
-            <div>
-              <h3>QA/QC Engineer</h3>
-              <p>Italian-Thai Development Public Company Limited · Dhaka, Bangladesh</p>
-            </div>
-            <time>Apr 2019 - Apr 2022</time>
-          </header>
-          <ul>
-            <li>Led QC for 200+ pile caps and metro station structures with zero safety incidents.</li>
-            <li>Executed 100+ audits and NCR actions, reducing defect rates by 40%.</li>
-            <li>Managed quality across 8 concurrent workstreams in multidisciplinary teams.</li>
-          </ul>
-        </article>
+    <section class="section" aria-label="Impact highlights">
+      <div class="container reveal">
+        <h2 class="section-title">Selected Impact</h2>
+        <div id="impact-grid" class="impact-grid"></div>
       </div>
     </section>
 
-    <section class="section" id="role-fit" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <p>Role Fit</p>
-          <h2>Where I can contribute immediately</h2>
-        </div>
-        <div class="role-grid">
-          <article class="role-card" data-reveal>
-            <h3>Project Coordinator / Assistant Project Manager</h3>
-            <p>Schedule follow-up, task tracking, risk logs, reporting, and stakeholder coordination.</p>
-          </article>
-          <article class="role-card" data-reveal>
-            <h3>Construction Site Engineer / Site Supervisor</h3>
-            <p>Site execution support, quality supervision, progress control, and contractor coordination.</p>
-          </article>
-          <article class="role-card" data-reveal>
-            <h3>PMO Support Analyst</h3>
-            <p>PMO means Project Management Office. This role supports project governance through dashboards, status packs, RAID logs, and process consistency.</p>
-          </article>
-          <article class="role-card" data-reveal>
-            <h3>Junior Data Analyst (Project/Operations)</h3>
-            <p>Excel-based analysis, KPI tracking, data cleaning, and converting raw project data into decisions.</p>
-          </article>
-        </div>
-
-        <figure class="site-photo" data-reveal>
-          <img src="assets/images/site-team-photo.jpg" alt="Construction team on project site" loading="lazy" onerror="this.onerror=null;this.src='assets/images/context-photo.jpg';">
-          <figcaption>Project site collaboration and multidisciplinary team execution.</figcaption>
-        </figure>
+    <section id="work" class="section">
+      <div class="container reveal">
+        <h2 class="section-title">Experience</h2>
+        <div id="experience-feed" class="experience-feed"></div>
       </div>
     </section>
 
-    <section class="section" id="skills-2026" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <p>Top Hiring Skills 2025-2026</p>
-          <h2>Skills employers are prioritizing across engineering, PM, and IT</h2>
-        </div>
-
-        <div class="skills-grid">
-          <article data-reveal>
-            <h3>Analytical Thinking</h3>
-            <p>Root-cause analysis, structured decisions, and data-backed recommendations for delivery issues.</p>
-          </article>
-          <article data-reveal>
-            <h3>Adaptability & Resilience</h3>
-            <p>Reliable execution under shifting priorities, constraints, and cross-team dependencies.</p>
-          </article>
-          <article data-reveal>
-            <h3>Communication & Stakeholder Alignment</h3>
-            <p>Clear status communication across technical and non-technical teams.</p>
-          </article>
-          <article data-reveal>
-            <h3>Emotional Intelligence</h3>
-            <p>Empathy, self-management, and professional collaboration in high-pressure project environments.</p>
-          </article>
-          <article data-reveal>
-            <h3>Leadership & Social Influence</h3>
-            <p>Driving ownership, accountability, and momentum without formal authority.</p>
-          </article>
-          <article data-reveal>
-            <h3>AI, Data, and Technology Literacy</h3>
-            <p>Using digital tools, dashboards, and beginner-level analytics to improve project outcomes.</p>
-          </article>
-        </div>
-
-        <div class="tools-strip" data-reveal aria-label="Tools and platforms">
-          <span>Excel</span>
-          <span>AutoCAD</span>
-          <span>Midas Civil</span>
-          <span>BOQ/BBS</span>
-          <span>KPI Dashboards</span>
-          <span>Quality Audits</span>
-          <span>Python (Beginner)</span>
-          <span>AI Tools</span>
-          <span>Project Reporting</span>
-        </div>
-
+    <section id="skills" class="section">
+      <div class="container reveal">
+        <h2 class="section-title">Skills for 2025-2026 Hiring</h2>
+        <div id="skills-grid" class="skills-grid"></div>
+        <h3 class="sub-title">Tools & Platforms</h3>
+        <div id="tools-strip" class="chip-row"></div>
       </div>
     </section>
 
-    <section class="section" id="contact" data-reveal>
-      <div class="container cta">
-        <h2>Available for interviews and immediate contribution</h2>
-        <p>If your team needs someone dependable in execution, coordination, supervision, and structured reporting, I am ready to contribute from day one.</p>
-        <div class="contact-strip" data-reveal>
-          <a href="mailto:tahmid.ce.08@gmail.com"><i class="fa-solid fa-envelope"></i> tahmid.ce.08@gmail.com</a>
-          <a href="tel:+358449517644"><i class="fa-solid fa-phone"></i> +358 449 517 644</a>
-          <a href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <section id="about" class="section">
+      <div class="container about-grid reveal">
+        <div>
+          <h2 class="section-title">About</h2>
+          <div id="about-body-text" class="about-text"></div>
         </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:tahmid.ce.08@gmail.com"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
-          <a class="btn btn-secondary" href="https://linkedin.com/in/toki-mohammad-t-a7b334159" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <div>
+          <h3 class="sub-title">How I Work</h3>
+          <div id="phi-list" class="principles"></div>
+          <figure class="site-photo">
+            <img src="assets/construction_site.png" alt="Construction site collaboration">
+            <figcaption>Field execution and multidisciplinary collaboration in large-scale projects.</figcaption>
+          </figure>
         </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-lead">Ready to contribute immediately in project execution, coordination, and reporting roles.</p>
+        <div id="contact-cards" class="contact-cards"></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>Toki Mohammad Tahmid</p>
-      <p>&copy; <span id="year"></span></p>
+  <footer class="footer section">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Toki Mohammad Tahmid</p>
+        <p class="footer-role">Civil Engineer & Project Coordinator</p>
+      </div>
+      <p>© <span id="year"></span> Toki Mohammad Tahmid</p>
     </div>
   </footer>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Toki Mohammad Tahmid",
-    "jobTitle": "Civil Engineer & Project Coordinator",
-    "email": "mailto:tahmid.ce.08@gmail.com",
-    "telephone": "+358449517644",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Turku",
-      "addressCountry": "Finland"
-    },
-    "sameAs": ["https://linkedin.com/in/toki-mohammad-t-a7b334159"]
-  }
-  </script>
-
-  <script src="js/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
+
 </html>
