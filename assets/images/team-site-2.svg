@@ -1,11 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Team photo placeholder 2">
-  <rect width="1200" height="900" fill="#1f2937"/>
-  <rect x="70" y="70" width="1060" height="760" fill="#111827" stroke="#fdba74" stroke-width="2"/>
-  <g fill="#334155">
-    <rect x="150" y="190" width="900" height="160"/>
-    <rect x="150" y="390" width="420" height="260"/>
-    <rect x="630" y="390" width="420" height="260"/>
-  </g>
-  <text x="600" y="280" font-family="IBM Plex Mono, monospace" font-size="40" fill="#f1f5f9" text-anchor="middle">Quality review team photo</text>
-  <text x="600" y="740" font-family="IBM Plex Mono, monospace" font-size="30" fill="#fed7aa" text-anchor="middle">Replace team-site-2.svg with a real image</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Quality review placeholder">
+  <rect width="1200" height="900" fill="#edf1f6"/>
+  <rect x="80" y="90" width="1040" height="720" fill="#f8fafe" stroke="#d3dae5" stroke-width="2"/>
+  <rect x="140" y="190" width="920" height="180" fill="#dbe2ec"/>
+  <rect x="140" y="400" width="420" height="320" fill="#e4e9f1"/>
+  <rect x="640" y="400" width="420" height="320" fill="#e4e9f1"/>
+  <rect x="180" y="450" width="340" height="18" fill="#bcc7d5"/>
+  <rect x="680" y="450" width="340" height="18" fill="#bcc7d5"/>
 </svg>

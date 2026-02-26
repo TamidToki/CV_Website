@@ -3,7 +3,7 @@ export const profile = {
   title: 'Civil Engineer & Project Coordinator',
   location: 'Turku, Finland',
   about: `Civil Engineer and Project Coordinator based in Turku, Finland, with 8+ years across infrastructure delivery, QA/QC systems, structural design support, and documentation leadership. I work at the intersection of field execution and project control: turning fragmented workstreams into clear plans, measurable status, and accountable outcomes.\n\nI am especially strong in schedule tracking, technical documentation quality, audit readiness, and team coordination across consultants, engineers, and contractors. I am currently expanding my data and AI workflow skills to support project intelligence and reporting roles.`,
-  profileImg: 'assets/profile_placeholder.png',
+  profileImg: 'assets/images/profile-photo.svg',
   contact: {
     phone: '+358 449 517 644',
     email: 'tahmid.ce.08@gmail.com',
@@ -41,7 +41,7 @@ export const workplaces = [
     role: 'QS Engineer',
     period: 'Aug 2023 - Apr 2025',
     location: 'Dhaka, Bangladesh',
-    image: 'assets/construction_site.png',
+    image: 'assets/images/site-team-photo.jpg',
     highlights: [
       'Centralized 700+ technical documents and reduced retrieval time by 60%.',
       'Coordinated 5 teams (15+ members), improving on-time milestone completion by 35%.',
@@ -54,7 +54,7 @@ export const workplaces = [
     role: 'QA/QC Engineer',
     period: 'Apr 2019 - Apr 2022',
     location: 'Dhaka, Bangladesh',
-    image: 'assets/qa_qc_site.png',
+    image: 'assets/images/team-site-1.svg',
     highlights: [
       'Led quality execution for metro structures and 200+ pile caps with zero safety incidents.',
       'Executed 100+ audits and NCR workflows, reducing defect rates by 40%.',
@@ -66,7 +66,7 @@ export const workplaces = [
     role: 'Structural Design Engineer',
     period: 'Apr 2022 - Aug 2023',
     location: 'Dhaka, Bangladesh',
-    image: 'assets/bridge_design.png',
+    image: 'assets/images/team-site-2.svg',
     highlights: [
       'Delivered bridge analysis and design under AASHTO LRFD and BNBC 2020 standards.',
       'Prepared 50+ technical drawings and design specifications for project stakeholders.',
@@ -78,11 +78,34 @@ export const workplaces = [
     role: 'Geotechnical Engineer',
     period: 'Apr 2022 - Mar 2023',
     location: 'Dhaka, Bangladesh',
-    image: 'assets/geotechnical_site.png',
+    image: 'assets/images/team-site-3.svg',
     highlights: [
       'Conducted SPT investigations and pile-capacity analysis to guide foundation design.',
       'Prepared geotechnical reports and coordinated drilling operations with design teams.'
     ]
+  }
+];
+
+export const visualMoments = [
+  {
+    image: 'assets/images/site-team-photo.jpg',
+    alt: 'Project site context image',
+    caption: 'Site Context'
+  },
+  {
+    image: 'assets/images/team-site-1.svg',
+    alt: 'On-site coordination visual',
+    caption: 'Coordination'
+  },
+  {
+    image: 'assets/images/team-site-2.svg',
+    alt: 'Quality review visual',
+    caption: 'Quality Reviews'
+  },
+  {
+    image: 'assets/images/team-site-3.svg',
+    alt: 'Team progress session visual',
+    caption: 'Progress Sync'
   }
 ];
 

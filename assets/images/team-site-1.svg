@@ -1,8 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Team photo placeholder 1">
-  <rect width="1200" height="900" fill="#0b3a53"/>
-  <rect x="80" y="80" width="1040" height="740" fill="#0f172a" stroke="#67e8f9" stroke-width="2"/>
-  <rect x="150" y="170" width="900" height="420" fill="#1e293b"/>
-  <rect x="180" y="620" width="840" height="120" fill="#0e7490"/>
-  <text x="600" y="420" font-family="IBM Plex Mono, monospace" font-size="42" fill="#e2e8f0" text-anchor="middle">On-site coordination photo</text>
-  <text x="600" y="690" font-family="IBM Plex Mono, monospace" font-size="30" fill="#e0f2fe" text-anchor="middle">Replace team-site-1.svg with a real image</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Site coordination placeholder">
+  <rect width="1200" height="900" fill="#eef2f7"/>
+  <rect x="80" y="90" width="1040" height="720" fill="#f9fbfd" stroke="#d3dae5" stroke-width="2"/>
+  <rect x="130" y="190" width="940" height="360" fill="#dfe5ee"/>
+  <rect x="130" y="580" width="940" height="170" fill="#e8edf4"/>
+  <g fill="#c5cfdb">
+    <circle cx="280" cy="660" r="48"/>
+    <circle cx="430" cy="660" r="48"/>
+    <circle cx="580" cy="660" r="48"/>
+    <circle cx="730" cy="660" r="48"/>
+    <circle cx="880" cy="660" r="48"/>
+  </g>
 </svg>
