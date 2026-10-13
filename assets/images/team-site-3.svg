@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Progress meeting placeholder">
-  <rect width="1200" height="900" fill="#eef2f6"/>
-  <rect x="80" y="90" width="1040" height="720" fill="#f9fbfd" stroke="#d3dae5" stroke-width="2"/>
-  <rect x="140" y="180" width="920" height="390" fill="#dfe5ee"/>
-  <rect x="140" y="600" width="270" height="140" fill="#e5eaf2"/>
-  <rect x="465" y="600" width="270" height="140" fill="#e5eaf2"/>
-  <rect x="790" y="600" width="270" height="140" fill="#e5eaf2"/>
-</svg>
