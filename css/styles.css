@@ -31,6 +31,17 @@ footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 2
 .js [data-reveal] { opacity: 0; transform: translateY(6px); transition: opacity .5s ease, transform .5s ease; }
 .js [data-reveal].visible { opacity: 1; transform: none; }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+@media (min-width: 1024px) {
+  main { max-width: 1000px; padding-top: 96px; }
+  .id { margin-bottom: 56px; }
+  .id .mark { width: 72px; height: 72px; }
+  .cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 96px; align-items: start; }
+  .about { position: sticky; top: 56px; }
+  .about p:last-child { margin-bottom: 0; }
+  .side h2:first-child { margin-top: 0; }
+  .plain { text-align: left; hyphens: manual; }
+  .dots { margin-top: 96px; }
+}
 @media (max-width: 520px) { main { padding-top: 48px; } }
 @media print { body { background: #fff; color: #000; } p, .list small, footer { color: #333; } [data-reveal] { opacity: 1 !important; transform: none !important; } }
 @media (prefers-reduced-motion: reduce) { .js [data-reveal] { opacity: 1; transform: none; transition: none; } a { transition: none; } }
